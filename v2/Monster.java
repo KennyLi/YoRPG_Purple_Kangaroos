@@ -5,10 +5,10 @@
 
 public class Monster extends Character{
     //instance variables
-    public int health;
-    public int strength;
-    public int defense;
-    public double attack;
+    private int health;
+    private int strength;
+    private int defense;
+    private double attack;
     
     //constructor
     public Monster(){

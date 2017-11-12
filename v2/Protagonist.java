@@ -8,7 +8,7 @@ public class Protagonist extends Character{
     private String name;
     private int health;
     private int strength;
-    public int defense;
+    private int defense;
     private double attack;
     
     //constructor
