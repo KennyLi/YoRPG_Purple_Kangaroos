@@ -3,7 +3,7 @@
 //HW#28: Ye Olde Role Playing Game
 //2017-11-08
 
-public class Monster{
+public class Monster extends Character{
     //instance variables
     public int health;
     public int strength;
