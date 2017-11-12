@@ -10,16 +10,16 @@ public class Monster{
     public int defense;
     public double attack;
     
-		//constructor
+    //constructor
     public Monster(){
         health = 150;
         strength = (int)(Math.random() * 45) + 20;
         defense = 20;
         attack = 1.0;
-        }
+    }
         
     public boolean isAlive(){
-         //the monster is defined as "alive" if it has positive value for health
+	//the monster is defined as "alive" if it has positive value for health
         return health > 0;
     }
         
@@ -29,10 +29,15 @@ public class Monster{
     
     public void lowerHP(int damage){   
         health -= damage;    //no return value necessary, lowers health by value damage
+      
     }
 		
     public int attack(Protagonist protagonist){
         int damage = (int)(strength * attack) - protagonist.defense; //calculates dmg
+	if (damage < 0) {
+	    damage = 0;
+	}
+	protagonist.lowerHP(damage);
         return damage;
     }
 }

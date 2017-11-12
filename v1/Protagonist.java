@@ -5,11 +5,11 @@
 
 public class Protagonist{
     //instance variables
-    public String name;
-    public int health;
-    public int strength;
+    private String name;
+    private int health;
+    private int strength;
     public int defense;
-    public double attack;
+    private double attack;
     
     //constructor
     public Protagonist(String newName){
@@ -39,6 +39,11 @@ public class Protagonist{
 		
     public int attack(Monster monster){
         int damage = (int)(strength * attack) - monster.defense; //calculates dmg
+	if (damage < 0) {
+	    damage = 0;
+	}
+	
+	monster.lowerHP(damage);
         return damage;
     }
     
