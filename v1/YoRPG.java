@@ -1,13 +1,19 @@
+//Purple Kangaroos- Clarence Cheng, Kenny Li, Simon Tsui
+//APCS1 pd 1
+//HW#28: Ye Olde Role Playing Game
+//2017-11-08
+
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
  * Simulates monster encounters of a wandering adventurer.
  * Required classes: Protagonist, Monster
  **********************************************/
 
-//Purple Kangaroos- Clarence Cheng, Kenny Li, Simon Tsui
-//APCS1 pd 1
-//HW#28: Ye Olde Role Playing Game
-//2017-11-08
+/**********************************************
+ * class YoRPG -- Driver file for Ye Olde Role Playing Game.
+ * Simulates monster encounters of a wandering adventurer.
+ * Required classes: Protagonist, Monster
+ **********************************************/
 
 import java.io.*;
 import java.util.*;
@@ -21,7 +27,7 @@ public class YoRPG
 
   //each round, a Protagonist and a Monster will be instantiated...
   private Protagonist pat;   //Is it man or woman?
-  private Monster smaug; //Friendly generic monster name?
+  private Monster smaug;     //Friendly generic monster name?
 
   private int moveCount;
   private boolean gameOver;
@@ -165,13 +171,15 @@ public class YoRPG
     int encounters = 0;
 
     while( encounters < MAX_ENCOUNTERS ) {
-    if ( !game.playTurn() )
-		break;
-    encounters++;
-    System.out.println();
+      if ( !game.playTurn() )
+        break;
+      encounters++;
+      System.out.println();
     }
 
     System.out.println( "Thy game doth be over." );
+    /*================================================
+      ================================================*/
   }//end main
 
 }//end class YoRPG

@@ -38,7 +38,7 @@ public class Protagonist{
     }
 		
     public int attack(Monster monster){
-        int damage = (int)(strength * attack) - monster.defense; //calculates dmg
+        int damage = (int)(strength * attack) - monster.getDefense(); //calculates dmg
 	if (damage < 0) {
 	    damage = 0;
 	}

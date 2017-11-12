@@ -33,7 +33,7 @@ public class Monster extends Character{
     }
 		
     public int attack(Protagonist protagonist){
-        int damage = (int)(strength * attack) - protagonist.defense; //calculates dmg
+        int damage = (int)(strength * attack) - protagonist.getDefense(); //calculates dmg
 	if (damage < 0) {
 	    damage = 0;
 	}
