@@ -20,10 +20,10 @@ public class Character{
 
     public int attack(Character character){
         int damage = (int)(strength * attack) - character.getDefense(); //calculates dmg
-				if (damage < 0) {s
-					damage = 0;
+	if (damage < 0) {s
+		damage = 0;
     }
-				character.lowerHP(damage);
-					return damage;
+	character.lowerHP(damage);
+	return damage;
     }
 }
