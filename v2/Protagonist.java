@@ -23,7 +23,6 @@ public class Protagonist extends Character{
 	if (damage < 0) {
 	    damage = 0;
 	}
-	
 	monster.lowerHP(damage);
         return damage;
     }
