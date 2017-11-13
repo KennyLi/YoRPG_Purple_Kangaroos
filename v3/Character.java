@@ -8,7 +8,7 @@ public class Character{
     public int health;
     public int strength;
     public int defense;
-    p double attack;
+    public double attack;
     
     public boolean isAlive(){
         //the character is defined as "alive" if it has positive value for health
@@ -25,7 +25,7 @@ public class Character{
 
     public int attack(Character character){
         int damage = (int)(strength * attack) - character.getDefense(); //calculates dmg
-	if (damage < 0) {s
+	if (damage < 0) {
 		damage = 0;
 	}
 	character.lowerHP(damage);
