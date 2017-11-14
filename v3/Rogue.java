@@ -2,6 +2,7 @@
 //APCS1 pd 1
 //HW#31: Ye Olde Role Playing Game, Expanded
 //2017-11-13
+
 public class Rogue extends Protagonist {
     public Rogue(String newName) {
         super(newName);

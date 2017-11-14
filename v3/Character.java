@@ -5,10 +5,10 @@
 
 public class Character{ 
     //attributes
-    public int health;
-    public int strength;
-    public int defense;
-    public double attack;
+    protected int health;
+    protected int strength;
+    protected int defense;
+    protected double attack;
     
     public boolean isAlive(){
         //the character is defined as "alive" if it has positive value for health
