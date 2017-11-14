@@ -10,10 +10,10 @@ public class Tank extends Protagonist {
         strength = 80;
     }
     public static String aboutTank() {
-        String retstr = "The strongest of the strong, the tank spends his days
-        at the gym getting gains. Legend has it he is so buff he doesn't even
-        need armor. Dependable at being a frontline, he is a little slow, and
-        lacks the damage necessary to take down all the enemies.";
+        String retstr = "The strongest of the strong, the tank spends his days ";
+        retstr += "at the gym getting gains. Legend has it he is so buff he doesn't even ";
+        retstr += "need armor. Dependable at being a frontline, he is a little slow, and ";
+        retstr += "lacks the damage necessary to take down all the enemies.";
         return retstr;
     }
 }

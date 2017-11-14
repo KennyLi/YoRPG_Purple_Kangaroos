@@ -10,11 +10,11 @@ public class Rogue extends Protagonist {
         strength = 120;
     }
     public static String aboutRogue(){
-        String retstr = "The rogue grew up poor, forced to steal in order to
-        survive. His parentscouldn't afford to raise him, so they abandoned him
-        at an orphanage. Destined for greatness, he longs for the opportunity
-        to rise to glory. Fast as fury, the rogue strikes quickly,
-        skillfully landing attacks in between pieces of armor.";
+        String retstr = "The rogue grew up poor, forced to steal in order to ";
+        retstr += "survive. His parents couldn't afford to raise him, so they abandoned him ";
+        retstr += "at an orphanage. Destined for greatness, he longs for the opportunity ";
+        retstr += "to rise to glory. Fast as fury, the rogue strikes quickly, ";
+        retstr += "skillfully landing attacks in between pieces of armor.";
         return retstr;
     }
 }

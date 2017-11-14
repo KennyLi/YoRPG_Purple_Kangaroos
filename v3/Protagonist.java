@@ -4,7 +4,9 @@
 //2017-11-08
 
 public class Protagonist extends Character{
-    
+		//attribute
+    protected String name = "Bob";
+		
     //constructor
     public Protagonist(String newName){
         name = newName;
