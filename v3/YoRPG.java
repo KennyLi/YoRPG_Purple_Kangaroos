@@ -86,7 +86,7 @@ public class YoRPG
     System.out.print( s );
 
     try {
-			int x  = Integer.parseInt(in.readLine());
+      int x  = Integer.parseInt(in.readLine());
       if(x == 1){
         pat = new Tank(name);
       }
