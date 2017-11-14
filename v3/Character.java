@@ -3,12 +3,17 @@
 //HW#30: Ye Olde Role Playing Game
 //2017-11-12
 
-public class Character{ 
+public abstract class Character{ 
     //attributes
     protected int health;
     protected int strength;
     protected int defense;
     protected double attack;
+
+    //abstract methods
+    public abstract void normalize();
+    public abstract void specialize();
+    public abstract String about();
     
     public boolean isAlive(){
         //the character is defined as "alive" if it has positive value for health
