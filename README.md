@@ -1,4 +1,5 @@
 # YoRPG_Purple_Kangaroos
+Clarence Cheng, Kenny Li, Simon Tsui
 * Protagonist Subclasses
   * Tank - The class that will outlive all the others. Has a higher health and lower strength than the generic protag.
   * Rogue - The class that does the most damage. Has a lower health and higher strength than the generic protag.
