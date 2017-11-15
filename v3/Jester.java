@@ -16,5 +16,5 @@ public class Jester extends Protagonist {
         retstr += "righteous justice as one, and maniacal revenge as the other. ";
         retstr += "Flip a coin, he is as unpredictable as it gets.";
         return retstr;
-		}
+	}
 }
