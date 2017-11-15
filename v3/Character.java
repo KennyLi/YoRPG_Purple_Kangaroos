@@ -9,11 +9,6 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double attack;
-
-    //abstract methods
-    public abstract void normalize();
-    public abstract void specialize();
-    public abstract String about();
     
     public boolean isAlive(){
         //the character is defined as "alive" if it has positive value for health
