@@ -4,7 +4,7 @@
 //2017-11-08
 
 public class Protagonist extends Character{
-		//attribute
+    //attribute
     protected String name = "Bob";
 		
     //constructor
