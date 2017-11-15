@@ -3,7 +3,7 @@
 //HW#30: Ye Olde Role Playing Game
 //2017-11-12
 
-public abstract class Character{ 
+public class Character{ 
     //attributes
     protected int health;
     protected int strength;
