@@ -82,6 +82,7 @@ public class YoRPG
     s += "\t1: Tank\n";
     s += "\t2: Rogue\n";
     s += "\t3: Jester\n";
+    s += "\t4: Healer\n";
     s += "Selection: ";
     System.out.print( s );
 
@@ -98,6 +99,10 @@ public class YoRPG
       else if(x == 3){
         pat = new Jester(name);
         System.out.println(pat.about());
+      }
+      else if(x == 4){
+	pat = new Healer(name);
+	System.out.println(pat.about());
       }
     }
     catch (IOException e) { }
