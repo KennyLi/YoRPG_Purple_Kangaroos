@@ -82,6 +82,10 @@ public class YoRPG
     s += "\t1: Tank\n";
     s += "\t2: Rogue\n";
     s += "\t3: Jester\n";
+<<<<<<< HEAD
+=======
+    s += "\t4: Healer\n";
+>>>>>>> 85f7b847e4bac5d11c65972aa69807b7145b94dc
     s += "Selection: ";
     System.out.print( s );
 
@@ -99,6 +103,13 @@ public class YoRPG
         pat = new Jester(name);
         System.out.println(pat.about());
       }
+<<<<<<< HEAD
+=======
+      else if(x == 4){
+	pat = new Healer(name);
+	System.out.println(pat.about());
+      }
+>>>>>>> 85f7b847e4bac5d11c65972aa69807b7145b94dc
     }
     catch (IOException e) { }
 
