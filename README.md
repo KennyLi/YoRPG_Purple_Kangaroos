@@ -8,3 +8,7 @@ Clarence Cheng, Kenny Li, Simon Tsui
   * Skeleton - Similar to the tank. Higher health and lower strength than a generic monster.
   * Zombie- Similar to the rogue. Lower health and higher strength than a generic monster.
   * Ghost- Similar to the jester. Has a random range of health and strength.
+
+v5 Update
+  * Health now displayed after each attack
+  * Monsters have been replaced by subclasses in YoRPG
