@@ -14,7 +14,7 @@ Clarence Cheng, Kenny Li, Simon Tsui
   * The generic monsters has been replaced by the monster subclasses in YoRPG.
   * Added the healer subclass to protagonists.
  
- #How To Play
+ ## How To Play
   1. Choose a difficulty from 1(easy), 2(medium), or 3(hard).
   2. Enter your name.
   3. Choose a protagonist by typing the number that corresponds to your choice.
