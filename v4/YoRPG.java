@@ -77,7 +77,7 @@ public class YoRPG
 	    name = in.readLine();
     }
     catch ( IOException e ) { }
-		
+
     s = "\nChoose a protagonist: \n";
     s += "\t1: Tank\n";
     s += "\t2: Rogue\n";
@@ -117,13 +117,24 @@ public class YoRPG
   {
     int i = 1;
     int d1, d2;
-
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
-
-	    smaug = new Monster();
+	    //smaug = new Monster();
+      int monsterfinder = (int)(Math.random() * 3);
+      if (monsterfinder == 0){
+        smaug = new Ghost();
+        System.out.println("Aye, tis a ghost");
+      }
+      else if (monsterfinder == 1){
+        smaug = new Skeleton();
+        System.out.println("Aye, tis a Skeleton");
+      }
+      else{
+        smaug = new Zombie();
+        System.out.println("Aye, tis a zombie");
+      }
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
@@ -150,6 +161,10 @@ public class YoRPG
 
         System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
+
+        System.out.println("==========================");
+        System.out.println("Hero's health: " + pat.health);
+        System.out.println("Monster's health: " + smaug.health);
 	    }//end while
 
 	    //option 1: you & the monster perish
@@ -171,7 +186,6 @@ public class YoRPG
         return false;
 	    }
     }//end else
-
     return true;
   }//end playTurn()
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
